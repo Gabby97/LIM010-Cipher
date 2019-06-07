@@ -1,7 +1,5 @@
 # Warehouse Codes
 
-![Logo](./imagenes/logo-warehousecode.png)
-
 Warehouse Codes presta servicios a empresas que desean codificar los productos de su almacen, diseñada para integrarse facilmente en cualquier linea de producción.
 *Ahorro Comprobado*!
 

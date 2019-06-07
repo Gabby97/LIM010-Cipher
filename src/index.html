@@ -2,15 +2,68 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Warehouse Codes</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
+     <header>
+          <h1 class="descripcion"> Codifica tus productos <em>!AHORRO ASEGURADO!</em></h1>
+        </header>
+        <main>
+          <!--Mi primera pantalla-->
+            <section id="hoja-uno">
+              <figure>
+                <img src="../imagenes/present.png" alt="logo">
+              </figure>
+              <form name="ingresar" id="form" method="POST" class="boton-ingreso">
+                <label id="contraseña" for="pw"><strong>Password:</strong></label>
+                <input id="pw" name="pw" placeholder="enter your password" type="password" required minlength="11" maxlength="12">
+                <button id="check" type="button">login</button>
+              </form>
+            </section>
+          <!--Mi segunda pantalla-->
+            <section id="hoja-dos">
+              <figure>
+                <img src="../imagenes/img2.jpg" alt="fondo">
+              </figure>
+              <button id="button2"><strong>Return</strong></button>
+              <h2 id="elegir">Choose</h2>
+              <button id="button3"><strong>Code</strong></button>
+              <button id="button4"><strong>Decode</strong></button>
+              <br>
+            </section>
+         <!--Mi tercera pantalla-->   
+            <section id="hoja-tres">
+              <div class="container">
+               <p id="letra">Ingrese el texto</p>
+               <p id="cifra">Texto cifrado</p>
+               <textarea id="white" name="cifrar"></textarea>
+               <input id="numro" type="number" min="1" placeholder="Ingrese un codigo">
+               <textarea id="text-cipher" name="descifrar"></textarea>
+               <button id="ejecutar"><strong>Ejecutar</strong></button>
+               <button id="regresar"><strong>Go Back</strong></button>
+              </div>
+
+            </section>
+
+         <!--Mi cuarta pantalla-->   
+            <section id="hoja-cuatro">
+              <div class="container">
+              <p id="tex-cifrado">Ingrese el texto cifrado</p>
+              <p id="tex-descif">Texto descifrado</p>
+              <textarea id="cipher" name="code"></textarea>
+              <input id="numero" type="number" min ="1" placeholder="Ingrese un codigo">
+              <textarea id="textt" name="decode"></textarea>
+              <button id="ejecutar1"><strong>Ejecutar</strong></button>
+              <button id="regresar1"><strong>Go Back</strong></button>
+            </div>
+            </section>
+        </main>
+        <footer>
+          <p><strong>Hecho con amor</strong></p>          
+        </footer>
+        <script src="cipher.js"></script>
+        <script src="index.js"></script>
   </body>
 </html>
 
