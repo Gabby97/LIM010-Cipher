@@ -1,28 +1,26 @@
 //Variable de las hojas 
-const hojaUno = document.getElementById('hoja-uno');
-const hojaDos = document.getElementById('hoja-dos');
-const hojaTres = document.getElementById('hoja-tres');
-const hojaCuatro = document.getElementById('hoja-cuatro');
+const vistaUno = document.getElementById('vista-Uno');
+const vistaDos = document.getElementById('vista-Dos');
+const vistaTres = document.getElementById('vista-Tres');
+const vistaCuatro = document.getElementById('vista-Cuatro');
 
 //variable  de mis botones
-const boton2 = document.getElementById('button2');
-const boton3 = document.getElementById('button3');
-const boton4 = document.getElementById('button4');
-const inputPassword = document.getElementById('pw');
-const btnIngresar = document.getElementById('check');
-const btnEjecutar = document.getElementById('ejecutar');
+const btnLogin = document.getElementById('check');
+const btnReturn = document.getElementById('btn-Return');
+const btnElegir = document.getElementById('btn-Elegir');
+const btnElegir1 = document.getElementById('btn-Elegir1');
+const btnPassword = document.getElementById('pw');
 const btnRegresar = document.getElementById('regresar');
-const btnEjecutar1 = document.getElementById('ejecutar1');
 const btnRegresar1 = document.getElementById('regresar1');
 
 let contador = 0;
 
-btnIngresar.addEventListener('click', () => {
+btnLogin.addEventListener('click', () => {
     if (contador < 3) {
-        if (inputPassword.value == 'LABORATORIA') {
+    if (btnPassword.value == 'LABORATORIA') {
             alert('Hola! Bienvenido');
-            document.getElementById('hoja-uno').style.display = 'none';
-            document.getElementById('hoja-dos').style.display = 'block';
+            vistaUno.classList.add('ocultar');
+            vistaDos.classList.replace('ocultar','mostrar');
         } else {
             alert('Contraseña incorrecta, Vuelve a intentarlo');
             contador++;
@@ -35,60 +33,55 @@ btnIngresar.addEventListener('click', () => {
 });
 
 
-boton2.addEventListener('click', () => {
-           document.getElementById('hoja-uno').style.display = 'block';
-           document.getElementById('hoja-dos').style.display = 'none';
+btnReturn.addEventListener('click', () => {
+           vistaUno.classList.add('mostrar');
+           vistaDos.classList.remove('mostrar' , 'ocultar');
 });
 
-boton3.addEventListener('click', () => {
-           document.getElementById('hoja-dos').style.display = 'none';
-           document.getElementById('hoja-tres').style.display = 'block';
-})
+btnElegir.addEventListener('click', () => {
+           vistaDos.classList.add('ocultar');
+           vistaTres.classList.remove('ocultar' , 'mostrar');
+});
 
-boton4.addEventListener('click', () => {
-           document.getElementById('hoja-dos').style.display = 'none';
-           document.getElementById('hoja-cuatro').style.display = 'block';
-})
+btnElegir1.addEventListener('click', () => {
+           vistaDos.classList.add('ocultar');
+           vistaCuatro.classList.remove('ocultar' , 'mostrar');
+});
 
 btnRegresar.addEventListener('click', () =>{
-           document.getElementById('hoja-tres').style.display = 'none';
-           document.getElementById('hoja-dos').style.display = 'block';
-})
+           vistaTres.classList.add('ocultar');
+           vistaDos.classList.remove('ocultar' , 'mostrar');
+});
 /*btnEjecutar1.addEventListener('click', () => {
            document
 })*/
 btnRegresar1.addEventListener('click', () => {
-          document.getElementById('hoja-cuatro').style.display = 'none';
-          document.getElementById('hoja-dos').style.display = 'block';
-})
-
-
-
-
-
-//Funcion que dispara el login
-/*document.getElementById('hoja-uno').style.display ='block';
-document.getElementById('hoja-dos').style.display ='none';
-document.getElementById('hoja-tres').style.display='none';
-document.getElementById('hoja-cuatro').style.display='none';*/
-
-
-/*boton1.addEventListener('click', function (){
-hojaDos.style.display = 'block';
-hojaTres.style.display = 'none';
+        vistaCuatro.classList.add('ocultar');
+        vistaDos.classList.remove('ocultar' , 'mostrar');
 });
+//variable para el cifrado  
 
-//funcion que retrocede al dar return
-boton2.addEventListener('click', function(){
-    hojaDos.style.display ='none';
-    hojaUno.style.display ='block';
+//const textCifra = document.getElementById('text-cifra');
+//const numero1 = document.getElementById('numro');
+const bbtnEjecutar = document.getElementById('ejecutar');
+//const cifrado = document.getElementById('text-result');
 
+bbtnEjecutar.addEventListener('click', () => {
+    const textCifra = document.getElementById('text-cifra').value;
+    const numero1 = document.getElementById('numro').value;
+    const resultado = cipher.encode(numero1,textCifra);
+
+    document.getElementById('text-result').innerHTML=resultado;
 });
+// variable para el descifrado
+   const bbtonEjecutar = document.getElementById('ejecutar1');
 
-//Funcion que elecciones de code or decode
+bbtonEjecutar.addEventListener('click', () => {
+    const textoCifrado = document.getElementById('texto-cifrado').value;
+    const numero2 = document.getElementById('numero').value;
+    const resultado = cipher.decode(numero2,textoCifrado);
 
-boton3.addEventListener('click', function (){
-    hojaDos.style.displace = 'none';
-    hojaTres.style.displace = 'block';
-})*/
-
+    document.getElementById('tex-resultado').innerHTML=resultado;
+    
+     
+});

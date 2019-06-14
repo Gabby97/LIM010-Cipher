@@ -1,21 +1,63 @@
-body{
+body {
     background-color: #1e3c60;
 }
-.boton-ingreso{
-    display: block;
-    position: relative;
-    margin-left: 10%;
-}
-main {
-    height:500px;
+header{
+    background-image: url(../imagenes/1.PNG);
+    background-repeat: no-repeat;
+    height:100px;
+    background-size: 80px;
     }
-
-img {
+h1 {
+    margin:0;
+    text-align: center;
+    position: relative;
+    top:35px;
+}
+#main {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #todo {
+    padding-bottom: 2.5rem;    
+  }
+  
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;  
+    height: 47px;
+     text-align: center ;
+     padding: 10px;
+     margin-top: 10px;  
+     background-color: #71849b;        
+  }
+  #vista-Uno img{
+    width: 600px;
+    height: 400px;
     display:block;
     margin:auto;
-    
-        }
-#check {
+  }
+  #vista-Dos img{
+    width: 600px;
+    height: 400px;
+    display:block;
+       margin:auto;
+  }
+  .mostrar{
+      display:block;
+  }
+  .ocultar{
+      display: none;
+  }
+  #form{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    border-radius: 10px;
+  }
+  .btnLogin {
     background: rgba(192, 235, 255, 0.507);
     color: black;
     font-size: 25px;
@@ -24,180 +66,176 @@ img {
     border-radius: 10px;
 
 }
-#check:hover {
+.btnLogin:hover {
     background: #16aab832;
 }
-.descripcion {
-    margin-top: 15px;
-}
-#pw {
-    padding: 10px;
-    background: rgb(147, 190, 190);
-}
-#contraseña {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-}   
-
-#button2 {
-    background: #71849b;
-    color: black;
-    font-size: 25px;
-    margin-top: 25px;
-    margin-left: 10px;
-    border-radius: 10px;
-    position:relative;
-    top:-470px;
-}
-#button2:hover {
-    background: #3e84da;
-}
-#button3 {
+#btn-Elegir {
     background: rgba(13, 66, 50, 0.507);
     color: black;
     font-size: 25px;
     margin-top: 25px;
-    margin-left: 620px;
+    margin-left: 595px;
     border-radius: 10px;
-    position:relative;
-    top: -667px;
+    position: absolute;
+    top: -1%;
     padding: 12px;
 }
-#button3:hover{
-    background:  rgba(132, 221, 194, 0.507);
+#btn-Elegir:hover{
+    background:  rgba(32, 225, 243, 0.507);
 }
-#button4 {
+#btn-Elegir1 {
     background: rgba(13, 66, 50, 0.507);
     color: black;
     font-size: 25px;
     margin-top: 25px;
-    margin-left: 620px;
+    margin-left: 595px;
     border-radius: 10px;
-    position:fixed;
-    position: relative;
-    top: -433px;
+    position: absolute;
+    top: 49%;
     padding: 12px;
 
 }
-#button4:hover{
-    background:  rgba(132, 221, 194, 0.507);
+#btn-Elegir1:hover{
+    background:  rgba(32, 225, 243, 0.507);
 }
-#hoja-uno {
-    height:500px;
-   /* background-image: url(../imagenes/present.png);*/
-  /*  background-size:600px;*/
-    background-position: center;
-    width: 100%;
-    margin:auto;
-    background-repeat: no-repeat;
-    display: block;
+.btonReturn{
+    background: #89a0bd;
+    color: black;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-left: 29px;
+    border-radius: 10px;
+    position:absolute;
+    top:-5%;
 }
-
-#hoja-uno img {
-    width: 600px;
-    height: 400px;
+.btonReturn:hover {
+    background: #3e84da;  
 }
-
-
-#hoja-dos {
-    height: 600px;
-    display:none;
-    /*background-image: url(../imagenes/img2.jpg);*/
-    background-size: 650px;
-    -moz-background-size:cover;
-    -webkit-background-size: cover; 
-    -o-background-size: cover;
-}
-#hoja-tres{
-    display: none;
-}
-
-#hoja-cuatro {
-    display: none;
-}
-
-footer{
-   
-    
-    background-color: #71849b;
-    height: 40px;
-    width: 100%;
-}
-
-footer p {
-    text-align: center;
-    padding-top: 12px;
-}
-header{
-   background-image: url(../imagenes/1.PNG);
-   background-repeat: no-repeat;
-   height:100px;
-   background-size: 80px;
-   }
-h1{
-    margin:0;
-    text-align: center;
-    position: relative;
-    top:35px;
-}
-
-h2 {
-
+#elegir{
     margin-top: 80px;
-    color: #eee5ea;
-    top:-393px;
-    margin-left: 380px;
+    color: #0bf0ca;
+    top:83px;
+    margin-left: 350px;
     margin-right: 18px;
-    position: relative;;
+    position: absolute;;
     font-size: 45px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.btnReturn{
+    background: rgba(54, 3, 70, 0.507);
+    color: rgb(234, 238, 234);
+    font-size: 15px;
+    margin-top: -13px;
+    margin-left: 55px;
+    border-radius: 10px;
+    position:absolute;
+    top:461px;
+    padding: 10px;
+}
+.btnReturn:hover{
+    background: #9876cfaf;
+}
+#text-result{
+    text-align: center;
+}
+#tex-resultado{
+    text-align: center;
+}
 #letra{
     margin-top: 40px;
-    color: rgb(2, 1, 14);
-    top:115px;
-    margin-left: 15px;
+    color: rgb(41, 223, 162);
+    top:-17px;
+    margin-left: 66px;
     margin-right: 18px;
-    position:fixed;
+    position:absolute;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
 }
 #cifra{
     margin-top: 40px;
-    color: rgb(2, 1, 14);
-    top:115px;
-    margin-left: 620px;
+    color: rgb(41, 223, 162);
+    top:-17px;
+    margin-left: 730px;
     margin-right: 18px;
-    position:fixed;
+    position:absolute;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
 }
-/*hoja tres*/
-#white {
+#letra-cifra{
+    margin-top: 40px;
+    color: rgb(41, 223, 162);
+    top:-17px;
+    margin-left: 66px;
+    margin-right: 18px;
+    position:absolute;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#letra-descifrado{
+    margin-top: 40px;
+    color: rgb(41, 223, 162);
+    top: -17px;
+    margin-left: 730px;
+    margin-right: 18px;
+    position: absolute;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+#text-cifra {
     font-size: 25px;
     margin-top: 120px;
-    margin-left: 15px;
+    margin-left: 64px;
     border-radius: 10px;
-    position:fixed;
-    top:100px;
-    padding: 13px;
+    position: absolute;;
+    top:-40px;
+    padding: 17px;
 }
-#text-cipher {
+.text-cifrado {
     font-size: 25px;
     margin-top: 120px;
-    margin-left: 620px;
+    margin-left: 730px;
     border-radius: 10px;
-    position:fixed;
-    top:100px;
-    padding: 13px;
+    position:absolute;
+    top:-40px;
+    padding: 33px;
+    background-color: white;
+    width: 250px;
 }
+#texto-cifrado{
+    font-size: 25px;
+    margin-top: 120px;
+    margin-left: 64px;
+    border-radius: 10px;
+    position: absolute;;
+    top:-40px;
+    padding: 17px;
+}
+.texto{
+    font-size: 25px;
+    margin-top: 120px;
+    margin-left: 64px;
+    border-radius: 10px;
+    position:absolute;
+    top:-40px;
+}
+
+
 #numro {
     font-size: 25px;
     margin-top: 120px;
-    margin-left: 318px;
+    margin-left: 413px;
     border-radius: 10px;
-    position:fixed;
-    top:200px;
+    position:absolute;
+    top:29px;
+    padding: 0px;
+}
+#numero{
+    font-size: 25px;
+    margin-top: 120px;
+    margin-left: 413px;
+    border-radius: 10px;
+    position:absolute;
+    top:29px;
     padding: 0px;
 }
 #ejecutar{
@@ -205,110 +243,26 @@ h2 {
     color: rgb(241, 235, 235);
     font-size: 25px;
     margin-top: 25px;
-    margin-left: 424px;
+    margin-left: 518px;
     border-radius: 10px;
-    position:fixed;
-    top:340px;
+    position:absolute;
+    top:179px;
     padding: 0px;
 }
 #ejecutar:hover{
     background: #c1c2ae32;
-}
-#regresar{
-    background: rgba(54, 3, 70, 0.507);
-    color: rgb(234, 238, 234);
-    font-size: 15px;
-    margin-top: 25px;
-    margin-left: 50px;
-    border-radius: 10px;
-    position:fixed;
-    top:470px;
-    padding: 10px;
-}
-#regresar:hover{
-    background: #9876cfaf;
-}
-/*hoja cuatro*/
-
-#tex-cifrado{
-    margin-top: 40px;
-    color: rgb(2, 1, 14);
-    top:115px;
-    margin-left: 15px;
-    margin-right: 18px;
-    position:fixed;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-#tex-descif{
-    margin-top: 40px;
-    color: rgb(2, 1, 14);
-    top: 115px;
-    margin-left: 620px;
-    margin-right: 18px;
-    position: fixed;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-}  
-#cipher{
-    font-size: 25px;
-    margin-top: 120px;
-    margin-left: 15px;
-    border-radius: 10px;
-    position:fixed;
-    top:100px;
-    padding: 13px;
-}
-#textt{
-    font-size: 25px;
-    margin-top: 120px;
-    margin-left: 620px;
-    border-radius: 10px;
-    position:fixed;
-    top:100px;
-    padding: 13px;
-}
-#numero{
-    font-size: 25px;
-    margin-top: 120px;
-    margin-left: 318px;
-    border-radius: 10px;
-    position:fixed;
-    top:200px;
-    padding: 0px;
 }
 #ejecutar1{
     background: rgba(202, 77, 19, 0.507);
     color: rgb(241, 235, 235);
     font-size: 25px;
     margin-top: 25px;
-    margin-left: 424px;
+    margin-left: 518px;
     border-radius: 10px;
-    position:fixed;
-    top:340px;
+    position:absolute;
+    top:179px;
     padding: 0px;
 }
 #ejecutar1:hover{
     background: #c1c2ae32;
-}
-
-#regresar1{
-    background: rgba(54, 3, 70, 0.507);
-    color: rgb(234, 238, 234);
-    font-size: 15px;
-    margin-top: 25px;
-    margin-left: 50px;
-    border-radius: 10px;
-    position:fixed;
-    top:470px;
-    padding: 10px;
-}
-#regresar1:hover{
-    background: #9876cfaf;
-}
-
-.container {
-    height: 50%;
-    width: 90%;
-
 }
