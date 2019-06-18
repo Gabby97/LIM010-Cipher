@@ -189,6 +189,7 @@ h1 {
     position: absolute;;
     top:-40px;
     padding: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .text-cifrado {
     font-size: 25px;
@@ -200,6 +201,7 @@ h1 {
     padding: 33px;
     background-color: white;
     width: 250px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 #texto-cifrado{
     font-size: 25px;
@@ -209,6 +211,7 @@ h1 {
     position: absolute;;
     top:-40px;
     padding: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .texto{
     font-size: 25px;
